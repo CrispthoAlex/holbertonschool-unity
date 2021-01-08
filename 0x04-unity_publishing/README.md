@@ -42,13 +42,13 @@
 # Download Maze
 
 ### Linux platform
-[Maze_Linux_x86_64](/Builds/Maze_Linux_x86_64.zip)
+[Maze_Linux_x86_64](Builds/Maze_Linux_x86_64.zip)
 
 ### Mac platform
-[Maze_Mac](/Builds/Maze_Mac.zip)
+[Maze_Mac](Builds/Maze_Mac.zip)
 
 ### Windows platform
-[Maze_Windows_x86_64](/Builds/Maze_Windows_x86_64.zip)
+[Maze_Windows_x86_64](Builds/Maze_Windows_x86_64.zip)
 
 
 #### Follow me 💬
