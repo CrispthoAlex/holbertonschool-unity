@@ -39,6 +39,18 @@
 * In your scripts, all your public classes and their members should have XML documentation tags
 * In your scripts, all your private classes and members should be documented but without XML documentation tags
 
+# Download Maze
+
+### Linux platform
+[Maze_Linux_x86_64](/Builds/Maze_Linux_x86_64.zip)
+
+### Mac platform
+[Maze_Mac](/Builds/Maze_Mac.zip)
+
+### Windows platform
+[Maze_Windows_x86_64](/Builds/Maze_Windows_x86_64.zip)
+
+
 #### Follow me 💬
 
 | Authors | GitHub | Twitter | Linkedin |
