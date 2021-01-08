@@ -33,5 +33,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
     // Exit game when Quit button is pressed
-    public void QuitMaze() => Debug.Log("Quit Game");
+    public void QuitMaze()
+    {
+        Debug.Log("Quit Game");
+        Application.Quit();
+    }
 }
