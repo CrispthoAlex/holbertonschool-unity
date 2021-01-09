@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public Text winLoseText;
     // Call to WinLoseBG GameObject
     public Image WinLoseBG;
+    // Movememnt with JoyStick
+    public Joystick moveJoystick;
 
     // ****** Private variables ******
     // Used for Coin object
@@ -43,15 +45,28 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // Get the value of the X and Z input axis for movement.
-        translateObj.x = Input.GetAxis("Horizontal");
-        translateObj.z = Input.GetAxis("Vertical");
+        if (Input.touchSupported)
+        {
+            // Active the Touch option for device
+            moveJoystick.gameObject.SetActive(true);
+            // Get the value of the X and Z input axis for movement.
+            translateObj.x = moveJoystick.Horizontal;// Horizontal
+            translateObj.z = moveJoystick.Vertical;// Vertical
+            // Invert the Axis => move in X rotate in Z
+            rotateObj.x = moveJoystick.Vertical;// Vertical
+            rotateObj.z = moveJoystick.Horizontal;// Horizontal
+        } else
+        {
+            moveJoystick.gameObject.SetActive(false);
+            // Get the value of the X and Z input axis for movement.
+            translateObj.x = Input.GetAxis("Horizontal");
+            translateObj.z = Input.GetAxis("Vertical");
+            // Invert the Axis => move in X rotate in Z
+            rotateObj.x = Input.GetAxis("Vertical");
+            rotateObj.z = Input.GetAxis("Horizontal");
+        }
         // Apply force to move the assets
         rb.AddForce(translateObj * speed * Time.deltaTime) ; 
-        
-        // Invert the Axis => move in X rotate in Z
-        rotateObj.x = Input.GetAxis("Vertical");
-        rotateObj.z = Input.GetAxis("Horizontal");
         // Apply force to rotate the assets
         rb.transform.Rotate(rotateObj * speed * Time.deltaTime) ;
     }
