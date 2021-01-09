@@ -50,6 +50,9 @@
 ### Windows platform
 [Maze_Windows_x86_64](Builds/Maze_Windows_x86_64.zip)
 
+### Android devices
+[Maze_Android](Builds/Maze_Android.zip)
+
 
 #### Follow me 💬
 
