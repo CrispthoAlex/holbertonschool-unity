@@ -56,5 +56,11 @@ public class PlayerController : MonoBehaviour
         // Gravity applied
         playerVelocity.y -= gravity * Time.deltaTime;
         controlPlayer.Move(playerVelocity * Time.deltaTime);
+        
+        // Avoid Infinite Free fall and Start from beggining
+        //if (controlPlayer.collisionFlags == CollisionFlags.None && playerVelocity.y < -25.0f)
+        //{            
+        //    Debug.Log("Free floating!");
+        //}
     }
 }
