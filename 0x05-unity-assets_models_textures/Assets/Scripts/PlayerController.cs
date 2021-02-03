@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Define the CharacterController component
-    private CharacterController controlPlayer;
+    //===== Public Variables ===== //
+    public float speed = 15.0f;
+    public float turnSmoothTime = 0.1f;
+    float turnSmoothVelocity;
+    public CharacterController controlPlayer;
+    public Transform cameraRotation;
+
+    //===== Privates Variables ===== //
     private Vector3 playerVelocity;
-    private bool isGround;
-    private float speed = 15.0f;
     private float jumpHeight = 1.5f;
     private float gravity = 9.81f;
-
+    
     private void Start()
     {
         controlPlayer = gameObject.AddComponent<CharacterController>();
@@ -19,27 +23,37 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Is Player on the ground?
-        isGround = controlPlayer.isGrounded;
-        if (isGround && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
-
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        controlPlayer.Move(move * Time.deltaTime * speed);
+        // Catch the movement on x and z directions
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
 
         if (move != Vector3.zero)
         {
-            gameObject.transform.forward = move;
+            // Fix the direction of Player with angle between X and Z axes.
+            float targetAngle = Mathf.Atan2(move.x, move.z) * Mathf.Rad2Deg + cameraRotation.eulerAngles.y;
+            
+            // Turn smooth
+            float correctedAngle = Mathf.SmoothDampAngle(
+                    transform.eulerAngles.y, targetAngle,
+                    ref turnSmoothVelocity, turnSmoothTime);
+            
+            // Rotation corrected
+            transform.rotation = Quaternion.Euler(0f, correctedAngle, 0f);
+
+            // Convert rotation in a direction
+            Vector3 followDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controlPlayer.Move(followDir.normalized * Time.deltaTime * speed);
+        }
+
+        // Is Player on the ground?
+        if (controlPlayer.isGrounded && playerVelocity.y < 0.0f) {
+            playerVelocity.y = 0.0f;
         }
 
         // Height position is changed
-        if (Input.GetButtonDown("Jump") && isGround)
-        {
+        if (Input.GetKeyDown(KeyCode.Space) && controlPlayer.isGrounded) {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -5.0f * (-gravity));
         }
-
+        // Gravity applied
         playerVelocity.y -= gravity * Time.deltaTime;
         controlPlayer.Move(playerVelocity * Time.deltaTime);
     }
