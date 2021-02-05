@@ -26,6 +26,17 @@ public class PlayerController : MonoBehaviour
         // Catch the movement on x and z directions
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
 
+        // Avoid Infinite Free fall and Start from beginning
+        //if (transform.position.y > -20.0f)
+        //{
+        //    controlPlayer.Move(move * Time.deltaTime * speed);
+        //}
+        //else
+        //{
+        //    controlPlayer.Move(new Vector3(0, 0, 0));
+        //    transform.position = new Vector3(0, 15, 0);
+        //}
+
         if (move != Vector3.zero)
         {
             // Fix the direction of Player with angle between X and Z axes.
@@ -56,11 +67,6 @@ public class PlayerController : MonoBehaviour
         // Gravity applied
         playerVelocity.y -= gravity * Time.deltaTime;
         controlPlayer.Move(playerVelocity * Time.deltaTime);
-        
-        // Avoid Infinite Free fall and Start from beggining
-        //if (controlPlayer.collisionFlags == CollisionFlags.None && playerVelocity.y < -25.0f)
-        //{            
-        //    Debug.Log("Free floating!");
-        //}
+
     }
 }

@@ -1147,7 +1147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackerPlayer: {fileID: 1940343802}
-  speed: 30
 --- !u!1 &1001013847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,6 +2435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ea8415d74df4e43834875c7029785f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 15
   turnSmoothTime: 0.1
   controlPlayer: {fileID: 0}
   cameraRotation: {fileID: 963194228}

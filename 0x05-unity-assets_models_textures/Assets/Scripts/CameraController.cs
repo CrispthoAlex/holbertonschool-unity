@@ -7,11 +7,9 @@ public class CameraController : MonoBehaviour
 {
     //======== Privates variables ========= //
     private Vector3 offset;
-
+    private float speedCam = 10.0f;
     //======== Public variables ========= //
     public Transform trackerPlayer;
-
-    public float speed;
 
     private void Start()
     {
@@ -28,7 +26,7 @@ public class CameraController : MonoBehaviour
         // Check mouse movement on X axis
         if (Input.GetAxis("Mouse X") != 0)
         {
-            offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speed, Vector3.up) * offset;
+            offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speedCam, Vector3.up) * offset;
         }
         
         transform.position = trackerPlayer.position + offset;
@@ -36,7 +34,7 @@ public class CameraController : MonoBehaviour
         transform.LookAt(trackerPlayer.position);
 
         // Avoid Infinite Free fall and Start from beginning
-        if (trackerPlayer.transform.position.y < -25.0f)
+        if (trackerPlayer.position.y < -25.0f)
         {
             SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
