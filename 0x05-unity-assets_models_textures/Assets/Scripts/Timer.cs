@@ -5,13 +5,26 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    // Public variables
     public Text TimerText;
     float time = 0f;
+
+    // Private variables
+    private bool finished = false;
   
     // Update is called once per frame
     void Update()
     {
+        if (finished)
+            return;
         time += Time.deltaTime;
         TimerText.text = string.Format("{1:0}:{0:00.00}", time % 60, time / 60);
+    }
+    // Stop the timer when Player touch the Winflag Object
+    public void Finish()
+    {
+        finished = true;
+        TimerText.color = Color.green;
+        TimerText.fontSize = 70;
     }
 }
