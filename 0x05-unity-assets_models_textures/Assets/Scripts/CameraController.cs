@@ -32,12 +32,6 @@ public class CameraController : MonoBehaviour
         transform.position = trackerPlayer.position + offset;
         
         transform.LookAt(trackerPlayer.position);
-
-        // Avoid Infinite Free fall and Start from beginning
-        if (trackerPlayer.position.y < -25.0f)
-        {
-            SceneManager.LoadScene(0, LoadSceneMode.Single);
-        }
     }
 }
 
