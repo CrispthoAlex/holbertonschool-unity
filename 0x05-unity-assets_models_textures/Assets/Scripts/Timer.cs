@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     {
         if (finished || resetedTime)
         {
-            finished = resetedTime = false;
+            resetedTime = false;
             return;
         }
             

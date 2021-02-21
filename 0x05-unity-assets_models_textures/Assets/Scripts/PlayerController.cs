@@ -67,5 +67,17 @@ public class PlayerController : MonoBehaviour
             transform.position = initialPosition;
             GameObject.Find("Player").SendMessage("resetTime");
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
+        }
+    }
+
+    // temporal method to Game exit
+    public void ExitGame()
+    {
+        Debug.Log("Exit Game");
+        Application.Quit();
     }
 }
