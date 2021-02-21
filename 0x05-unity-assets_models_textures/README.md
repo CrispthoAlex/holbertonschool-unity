@@ -47,15 +47,20 @@
 * In your scripts, all your public classes and their members should have XML documentation tags
 * In your scripts, all your private classes and members should be documented but without XML documentation tags
 
-# Download Platformer
+# Download Platformer Game
 
 ### Linux platform
-
+[Platformer_Linux_x86_64](./Builds/Platformer_Linux_x86_64.zip)
 
 ### Mac platform
-
+[Platformer_Mac.app](./Builds/Platformer_Mac.app.zip)
 
 ### Windows platform
+[Platformer_Windows_x86_64](./Builds/Platformer_Windows_x86_64.zip)
+
+###### Note
+* Press ``Escape`` key to exit game
+
 
 ## Credits
 #### [Skyboxes: Farland Skies - Cloudy Crown](https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004#reviews)
