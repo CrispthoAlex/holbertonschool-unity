@@ -3,12 +3,17 @@ guid: 1916c6c12f34bc2428b56338eb9fa7e9
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fall_Leafs
+    second: {fileID: 2100000, guid: 6012fbb21bf8f3944a80704da9925304, type: 2}
   materials:
     materialImportMode: 1
-    materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

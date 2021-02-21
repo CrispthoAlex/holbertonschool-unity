@@ -3,12 +3,22 @@ guid: 62067c8023fc3e34ab90b9247e47957e
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_leafs
+    second: {fileID: 2100000, guid: 9bd469198b3c012499589ab83a9c2060, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_Wood
+    second: {fileID: 2100000, guid: 3ed38ef60e4c7654e89018664ed323c0, type: 2}
   materials:
     materialImportMode: 1
-    materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
