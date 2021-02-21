@@ -61,10 +61,11 @@ public class PlayerController : MonoBehaviour
         playerVelocity.y -= gravity * Time.deltaTime;
         controlPlayer.Move(playerVelocity * Time.deltaTime);
 
-        // Avoid Infinite Free fall and Start from beginning
+        // Avoid Infinite Free fall, Start from beginning and time reset
         if (transform.position.y < -20.0f)
         {
             transform.position = initialPosition;
+            GameObject.Find("Player").SendMessage("resetTime");
         }
     }
 }
