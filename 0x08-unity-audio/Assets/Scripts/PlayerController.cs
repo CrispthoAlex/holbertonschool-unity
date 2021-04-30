@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
 
     //direction the player is moving
     public Vector3 movePlayer;
+    public AudioSource stepPlayer;
+    public AudioClip stepSound;
 
     // camera
     public Camera mainCamera;
@@ -72,11 +74,9 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y > -20)
         {
-            player.Move(movePlayer * Time.deltaTime);
-            
-        }
-        
-        else
+            player.Move(movePlayer * Time.deltaTime);            
+        } 
+        else 
         {
             //gravity = 9.8f;
             transform.position = new Vector3(0, 20, 0);
@@ -152,5 +152,19 @@ public class PlayerController : MonoBehaviour
             Debug.Log(string.Format("esta en la platform"));
         }
         
+    }
+    // Steps sounds when the player is moving
+    public void StepFx()
+    {
+        stepPlayer.PlayOneShot(stepSound);
+    }
+
+    public void Update()
+    {
+        // Active the stepSound
+        if (transform.position.x > 0 || transform.position.z > 0)
+        {
+            StepFx();
+        }
     }
 }
