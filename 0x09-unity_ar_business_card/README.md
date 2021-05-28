@@ -41,13 +41,11 @@
     <li>In your scripts, all your private classes and members should be documented but without XML documentation tags</li>
 </ul>
 
-# Download Platformer Game
+# Download Platformer Game for iOS and Android platform
+#### 1) Download the file according your device. 
+#### 2) Decompress the file and install the APK. If you have some issues about permissions or securities give to accept the alert, don't worry. Later, you can uninstall it
 
-### iOS platform
-
-
-### Android
-
+📱 [Download](https://drive.google.com/drive/folders/1tOvSinIVvARRl72TzAn1FSROz3aiSxD3?usp=sharing)
 
 #### Follow me 💬
 
