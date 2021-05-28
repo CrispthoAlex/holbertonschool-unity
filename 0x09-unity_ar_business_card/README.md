@@ -1,6 +1,3 @@
-<a href= "url"><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/1/74b90513694ce0623050.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210521%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210521T014311Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=224a40c236b5d5138d2995fa4686dd71514daa23dcca061e17572b6df4b904bb" width="832px"></a>
-<br>
-
 # 0x09. Unity - AR Business Card
 
 ## Background Context
@@ -41,11 +38,21 @@
     <li>In your scripts, all your private classes and members should be documented but without XML documentation tags</li>
 </ul>
 
-# Download Platformer Game for iOS and Android platform
-#### 1) Download the file according your device. 
+# How use the AR Business Card
+
+## Download Platformer Game for iOS and Android platform
+#### 1) Download the file according your device.
+📱 [Download](https://drive.google.com/drive/folders/1tOvSinIVvARRl72TzAn1FSROz3aiSxD3?usp=sharing)
 #### 2) Decompress the file and install the APK. If you have some issues about permissions or securities give to accept the alert, don't worry. Later, you can uninstall it
 
-📱 [Download](https://drive.google.com/drive/folders/1tOvSinIVvARRl72TzAn1FSROz3aiSxD3?usp=sharing)
+## Image to test AR Business Card
+![image](https://user-images.githubusercontent.com/60373956/119927876-f3db1c00-bf3f-11eb-8d0d-b979c6a4e4be.png)
+
+#### AR Business Card Layout
+![layout](business_card_design.jpg)
+* Touch the Social media links and enjoy
+<br>
+
 
 #### Follow me 💬
 
