@@ -18,7 +18,7 @@ public class OpenUrl : MonoBehaviour
     
     public void LinkedIn()
     {
-        Application.OpenURL("https://linkedin/in/carmurrain");
+        Application.OpenURL("https://linkedin.com/in/carmurrain");
     }
 
     public void GitHub()
