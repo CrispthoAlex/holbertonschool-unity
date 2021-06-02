@@ -1,4 +1,4 @@
-# 0x09. Unity - AR Business Card
+<h1>0x09. Unity - Augmented Reality (AR) Business Card</h1>
 
 ## Background Context
 <p>For AR projects, we will be utilizing a few different SDKs, starting with Vuforia. As of Unity 2017.2, Vuforia is integrated into Unity and supports development for iOS, Android, and Windows.</p>
@@ -40,7 +40,7 @@
 
 # How use the AR Business Card
 
-## Download Platformer Game for iOS and Android platform
+## Download for iOS and Android platform
 #### 1) Download the file according your device.
 📱 [Download](https://drive.google.com/drive/folders/1tOvSinIVvARRl72TzAn1FSROz3aiSxD3?usp=sharing)
 #### 2) Decompress the file and install the APK. If you have some issues about permissions or securities give to accept the alert, don't worry. Later, you can uninstall it
