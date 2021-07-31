@@ -1,0 +1,66 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "PlayVR",
+            "id": "38848a09-a51b-42cb-af46-b966b69b84a6",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "c83d1683-2791-4b2b-b83c-7578a05ea9cf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "255879a4-7259-4253-8d1d-3113f1de57f9",
+                    "path": "<HID::Twin USB Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f30cebe7-57ed-4c87-97d0-8053a61e0d28",
+                    "path": "<HID::Twin USB Joystick>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac6d31d4-e8e8-490d-a007-7833353bc40d",
+                    "path": "<HID::Twin USB Joystick>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42ae45b2-ad2b-413c-aba4-2d588a98556d",
+                    "path": "<HID::Twin USB Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
