@@ -59,7 +59,7 @@
 ### License
 *`0x0D. Unity - ShaderGraph` is open source and therefore free to download and use without permission.*
 
-<a href="url"><img src="https://www.holbertonschool.com/holberton-logo.png" align-self="middle" width="100" height="30"></a>
+<a href="url"><img src="https://theme.zdassets.com/theme_assets/2439906/391a1b5058281ff9c224e2dadc38ea90659556ba.png" align-self="middle" width="80" height="auto"></a>
 
 ##### Holberton School – Advanced Program – AR/VR
 ##### October, 2021. Cali, Colombia
