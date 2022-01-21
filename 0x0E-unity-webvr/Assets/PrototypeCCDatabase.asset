@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015e9e492ced157498913c229c9f2a6c, type: 3}
+  m_Name: PrototypeCCDatabase
+  m_EditorClassIdentifier: 
+  DatabaseEntries:
+  - clip: {fileID: 8300000, guid: c1b79e2e7fc73f449af3051fb3044efb, type: 3}
+    Lines:
+    - StartSecond: 0
+      Text: '[ Humming ]'
+    - StartSecond: 1.5
+      Text: '[ More Soft_Impact ]'
+  - clip: {fileID: 8300000, guid: e28c90b3e8525e24e8ffcc0a5e81f376, type: 3}
+    Lines:
+    - StartSecond: 0
+      Text: '[ Soft_Impact ]'
+    - StartSecond: 1.5
+      Text: '[ More Humming ]'
+  - clip: {fileID: 8300000, guid: cb9c766249a53f94882893cd9d551dc8, type: 3}
+    Lines:
+    - StartSecond: 0
+      Text: '[ Medium_Impact ]'
+    - StartSecond: 1.5
+      Text: '[ More Medium_Impact ]'
+  - clip: {fileID: 8300000, guid: 6cc51a4bbc69b8146b6170eb6efeae2e, type: 3}
+    Lines:
+    - StartSecond: 0
+      Text: '[ Strong_Impact ]'
+    - StartSecond: 1.5
+      Text: '[ More Strong_Impact ]'
+  - clip: {fileID: 8300000, guid: ef2663bec11889c428b2e990047067fc, type: 3}
+    Lines:
+    - StartSecond: 0
+      Text: '[ Very_Strong_Impact ]'
+    - StartSecond: 1.5
+      Text: '[ More Very_Strong_Impact ]'
